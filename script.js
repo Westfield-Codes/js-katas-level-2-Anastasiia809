@@ -37,16 +37,22 @@ function add(a,b) {
  * @param: a, b (integers)
  * @return: a - b
  */
-
+function subtract(a,b) {
+ return a - b;
+}
 /* FUNCTION multiply(a,b)
  * define a function called multiply with two number parameters a and b
  * @param: a, b (integers)
  * @return: a * b (* means multiply)
  */
-
+function multiply(a,b) {
+    return a * b;
+}
 /* FUNCTION divide(a,b)
  * define a function called divide with two number parameters a and b
  * @param: a, b (integers)
  * @return: a / b (/ means divided by)
  */
-
+function divide() {
+    return a / b;
+}
