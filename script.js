@@ -19,9 +19,9 @@ var picked = [];
 function main() {
    let count = prompt("How many students here?");
    addStudents(count);
-   let gateKeeper = randStudent();
+   let gateKeeper = randStudent(count);
    let keyMaster = randNewStudent();
-   alert("Gatekeeper = " + gateKeeper + " and keyMaster = " + keyMaster);
+   alert("Gatekeeper = " + gateKeeper + " and Keymaster = " + keyMaster);
 }
 /* Function addStudents(count)
  * Use the students array, nothing in it. 
@@ -34,25 +34,28 @@ function addStudents(count){
    for (let student = 1; student <= count; student++){
       students.push(prompt("Next student?"));
    }
-   console.log(students.toString());
+   console.log(students);
 }
 /* Function randStudent()
  * Set student = random number, 0 to length of students array.
  * Set name = element in students array at that random index.
  * Add name to picked array. 
  * Return the name of the random student
- * @param = none
+ * @param = count
  * @return = name {string}
  */
- function randStudent(){
-   return "Alina";
+ function randStudent(count){
+   let student = Math.floor(Math.random()*count);
+   let name = students[student];
+   picked.push(name);
+   return name;
  }
 /* Function randNewStudent() (start with copy of randStudent)
- * Set student = "" and picked = 0. 
- * Loop while picked is not equal to -1
+ * Set student = "" and pickedYet = 0. 
+ * Loop while pickedYet is not equal to -1
  * Set student = random number, 0 to length of students array.
  * Set name = element in students array at that random index.
- * Set picked = the index of that name the picked array. 
+ * Set pickedYet = the index of that name the picked array. 
  * End the while loop.
  * Add name to picked array.
  * Return the name of the new random student
@@ -60,5 +63,15 @@ function addStudents(count){
  * @return = name {string}
  */
 function randNewStudent(){
-   return "Anhelina";
+   let student = 0;
+   let pickedYet = 0;
+   let name = "";
+   while (pickedYet != -1) {
+      student = Math.floor(Math.random()*students.length);
+      name = students(student);
+      pickedYet = picked;
+   }
+   // let name = students[student];
+   picked.push(name);
+   return name;
 }
