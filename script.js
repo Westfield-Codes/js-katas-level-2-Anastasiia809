@@ -1,44 +1,43 @@
-/* COLOR WHEEL KATA */
+/* GUINEA PIGS KATA:  */
 
-/* Var Alert Prompt Conditional Switch 3 Functions */
+/* Story:  You're breeding a herd of prize short-hair guinea pigs!  
+ * You're into the 2nd generation, so you have
+ * two parent, a sow (s) and a boar (s), and a litter of 4 pups 
+ * (b,b,s,s). You wanted two bloodlines so
+ * you bought a matching litter of 4 (s,s,b,b) and bread them all 
+ * together.  Now you have 16 grandchildren! How do you keep track 
+ * of them all? 
+ */ 
 
-/* FUNCTION main() 
- * create a variable called color and prompt the user for a primary or secondary color (they )
- * if checkColor(color) says false, say "must be primary or secondary" and call main again.
- * otherwise, display "the complementary color of [color] is [complementaryColor(color)]"
- * @param: none (main never gets params)
- * @return: none (main never gets returns
+/* 1. function makeHerd(pigs)
+ * Create myHerd array of [pigs]: 2 parents and pigs-2 children. 
+ * Each pig needs to have four attributes:
+ * Generation (0 or 1), sex (boar or sow), color (white, black, or 
+ * orange) and coat pattern (solid, crest or dutch)
+ * As you ask for each pig, include integers for generation, first 
+ * letters for other 3 values. Example: [1, b, w, c]
+ * Test the array by using array.join to display each pig on
+ * a separate line. 
  */
-function main() {
-   let color = prompt("Primary color?");
-   if (!checkColor(color)) alert("must be primary or secondary");
-   else alert("the complementary color of " + color + " is " + complementaryColor(color));
+function makeHerd() {
+   let pigs = ["1-parent","2-parent","1-kid","2-kid"];
+   let animal = confirm("Do you want ");
 }
-/* FUNCTION checkColor (color)
- * set boolean goodColor to false
- * use a compound conditional (or) to check for primary
- * if it's a primary color, set goodColor to true
- * otherwise, use a compound conditional (or) to check for secondary
- * if it's a secondary color, set goodColor to true
- * return goodColor
- * @param: color (string)
- * @return: goodColor (boolean)
+/* 2. function makeHerd()
+ * Instead of creating the herd by hand, use a random generator.
+ * Write function to add string values based on random number values
+ * Use either switches or lookup arrays to assign attributes with  
+ * the values - try both! Work with a makePig function that 
+ * Returns a pig. makeHerd function asks for how many pigs to make, 
+ * which generation, and uses makePig to make them 
+ * Use our array.join function to list each pig, separate line
+ * Obviously this won't match our herd because the sex and 
+ * generation ratios will be off. 
  */
-function checkColor(color) {
-   let goodColor = false;
 
-}
-
-/* FUNCTION complementaryColor(color)
- * create a variable called complement, set to ""
- * use a switch function and switch on color
- * (look at this: https://www.canva.com/colors/color-wheel)
- * in the switch, assign the complementary color to complement
- * @param: color (string)
- * @return: complement (string)
+/* 3.herdAnalyzer
+ * You've generated a random herd.  Now let's see what's going on 
+ * there. Create a herdAnalyzer function that counts how many pig 
+ * total, how many of each sex, and generate a report: "Your herd
+ * has # pigs with # sows and # boars. 
  */
-function complementaryColor(color) {
-   let complement = "";
-   checkColor(color);
-   
-}
