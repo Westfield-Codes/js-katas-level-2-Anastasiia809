@@ -14,11 +14,12 @@ function main() {
  * when loop's done, alert the list
  */
 function makeList() {
-   let shoppingList = "to Buy: \n" ;
+   let shopArray = [];
+   let shoppingList = " To Buy: \n"
    for (let item = 1;item<=5;item++) {
-      shoppingList+=prompt("item "+item)+"\n";
+      shopArray.push(prompt("List items"));
    }
-   alert(shoppingList);
+   alert(shoppingList + shopArray.join("\n"));
 }
 /* 2. for loop and array with toString */
 
