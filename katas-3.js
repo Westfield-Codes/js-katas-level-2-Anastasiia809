@@ -1,3 +1,5 @@
+
+
 // Don't Edit! Just copy and paste. 
 
 /* Loops & Arrays Katas */
@@ -21,9 +23,9 @@
  * /
 
 /* Function addStudents(count)
- * Create a students array, nothing in it. 
- * Use a for loop to add student names to the students array.
+ * Use a for loop to add student names to the global students array.
  * The loop should run count number of times. 
+ * The loop should ask the user for a name and push it to the students array.
  * Return the array of student names 
  * @param = count {integer}
  * @return = none
@@ -82,11 +84,23 @@
  * the at end, alert list with array.join() method with line breaks 
  * instead of commas */
  
-/* 4. loops, arrays and functions */
+/* 4. 2D Arrays: add Pricing */
 
-/* Same function, using previous code, but THIS TIME:
- * store each item as a numbered item ["1. cookies","2. donuts"])   
- * using the loop index. */
+/* Same function, using previous code, but THIS TIME add prices
+ * When someone enters an item, prompt them also to enter a price separating by comma (like milk, 1.99)])   
+ * Convert that entry to an itemPrice array by using string.split() and use a comma as delimiter
+ * Push the itemPrice array to shopArray
+ */
+
+/* 5. Total up the prices */
+
+/* Same function, using previous code, but THIS TIME total the prices.
+ * After you have built the array, create a NEW loop that adds the price 
+ * of each item to a total. Do this before the alert. 
+ * Save the first alert content as message. 
+ * Add total as a line below message, then alert the message. 
+ */
+
 
 /* MULTIPLICATION FREQUENCY KATA */
 
