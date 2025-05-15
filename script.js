@@ -38,20 +38,27 @@ function main() {
 
 /* 5. Total up the prices */
 function makeList() {
-   let total = 0;
-   let shopArray = [];
-   let shoppingList = " To Buy: \n"
-   for (let item = 1;item<=5;item++) {
-      next = prompt("item "+item+" Enter item name "); 
-      shopArray.push(next.split(","));
-   }
-   for (let item = 0;item<=5;item++) {
-      total += shopArray[item][1];
-   }
-   let message = (shoppingList + shopArray.join("\n"));
-   message += "Total is " + total;
-   alert(message);
-}
+   // let total = 0;
+   let shopArray = ["fish", "milk"];
+   // let random =1;
+   // alert(shopArray[random]);
+   let prices = [1.99, 3.55];
+   let question = prompt("Whih item?");
+   let item = shopArray.indexOf(question);
+   alert(prices[item]);
+//    alert(shopArray[random]+prices[shopArray.indexOf]);
+//    let shoppingList = " To Buy: \n";
+//    for (let item = 1;item<=5;item++) {
+//       next = prompt("item "+item+" Enter item name "); 
+//       shopArray.push(next.split(","));
+//    }
+//    for (let item = 0;item<=5;item++) {
+//       total += shopArray[item][1];
+//    }
+//    let message = (shoppingList + shopArray.join("\n"));
+//    message += "Total is " + total;
+//    alert(message);
+ }
 /* Same function, using previous code, but THIS TIME total the prices.
  * After you have built the array, create a NEW loop that adds the price 
  * of each item to a total. Do this before the alert. 
