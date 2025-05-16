@@ -1,6 +1,58 @@
+
+
 // Don't Edit! Just copy and paste. 
 
 /* Loops & Arrays Katas */
+
+/* RANDOM STUDENT KATA:  */
+
+// Who will be gatekeeper and keymaster today?
+
+/* Global Variables */
+// Create an array called students, start empty. 
+// Create an array called picked, start empty. 
+
+/* Function Main()
+ * Set variable count to asking how many students there are.
+ * Fill global array students by passing count as an argument to addStudents
+ * Set gateKeeper = randStudent(), the name of a random student in the list
+ * Set keymaster = randNewStudent(), name of a different random student
+ * Display gatekeeper name and keymaster name for this kata
+ * @param = none
+ * @return = none
+ * /
+
+/* Function addStudents(count)
+ * Use a for loop to add student names to the global students array.
+ * The loop should run count number of times. 
+ * The loop should ask the user for a name and push it to the students array.
+ * Return the array of student names 
+ * @param = count {integer}
+ * @return = none
+ */
+
+/* Function randStudent()
+ * Set student = random number, 0 to length of students array.
+ * Set name = element in students array at that random index.
+ * Add name to picked array. 
+ * Return the name of the random student
+ * @param = none
+ * @return = name {string}
+ */
+ 
+/* Function randNewStudent() (start with copy of randStudent)
+ * Set student = "" and picked = 0. 
+ * Loop while picked is not equal to -1
+ * Set student = random number, 0 to length of students array.
+ * Set name = element in students array at that random index.
+ * Set picked = the index of that name the picked array. 
+ * End the while loop.
+ * Add name to picked array.
+ * Return the name of the new random student
+ * @param = none
+ * @return = name {string}
+ */
+
  
 /* SHOPPING LIST KATA:  */
 
@@ -32,11 +84,23 @@
  * the at end, alert list with array.join() method with line breaks 
  * instead of commas */
  
-/* 4. loops, arrays and functions */
+/* 4. 2D Arrays: add Pricing */
 
-/* Same function, using previous code, but THIS TIME:
- * store each item as a numbered item ["1. cookies","2. donuts"])   
- * using the loop index. */
+/* Same function, using previous code, but THIS TIME add prices
+ * When someone enters an item, prompt them also to enter a price separating by comma (like milk, 1.99)])   
+ * Convert that entry to an itemPrice array by using string.split() and use a comma as delimiter
+ * Push the itemPrice array to shopArray
+ */
+
+/* 5. Total up the prices */
+
+/* Same function, using previous code, but THIS TIME total the prices.
+ * After you have built the array, create a NEW loop that adds the price 
+ * of each item to a total. Do this before the alert. 
+ * Save the first alert content as message. 
+ * Add total as a line below message, then alert the message. 
+ */
+
 
 /* MULTIPLICATION FREQUENCY KATA */
 

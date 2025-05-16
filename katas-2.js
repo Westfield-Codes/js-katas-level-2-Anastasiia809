@@ -5,7 +5,7 @@
 /* AGE KATA */
 
 /* Var, Alert, Prompt, Function */
-
+`
 /* FUNCTION main() 
  * Facebook wants to check if you're 13, so they ask your birth year 
  * set age = "How old are you?"
@@ -14,7 +14,6 @@
  * @param: none (main never gets params)
  * @return: none (main never gets returns
  */
-
 
 /* FUNCTION myAge(age)
  * define a function called myAge with number parameter age
@@ -57,79 +56,87 @@
 /* ************************************* */
 
 /* CALCULATOR KATA */
-
 /* This is best done with a JS switch control, though can also be a chain of conditionals. */
 
 /* FUNCTION main() 
- * Ask the user what operation they want (+, -, *, /)
- * Ask the user for the first number (a)
- * Parse a as an integer
- * Ask the user for the second number (b)
- * Parse b as an integer
- * Based on the operation, send the numbers to the right function as
- * arguments and store the returned value in variable called result
- * Alert the equation a + operation + b = result
+ * Perform basic arithmetic as a calculator
  * @param: none (main never gets params)
- * @return: none (main never gets returns
+ * @return: none (main never gets returns)
  */
+
+ // Ask the user what operation they want (+, -, *, /)
+ // Ask the user for the first number (a)
+ // Parse a as an integer
+ // Ask the user for the second number (b)
+ // Parse b as an integer
+ // Based on the operation, send the numbers to the right function as arguments 
+ // store the returned value in variable called result
+ // Alert the equation a + operation + b = result
 
 /* FUNCTION add(a,b)
- * define a function called add with two number parameters a and b
- * @param: a, b (integers)
- * @return: a + b
- */
+* define a function called add with two number parameters a and b
+* @param: a, b (integers)
+* @return: a + b
+*/
+
 
 /* FUNCTION subtract(a,b)
- * define a function called subtract with two number parameters a and b
- * @param: a, b (integers)
- * @return: a - b
- */
+* define a function called subtract with two number parameters a and b
+* @param: a, b (integers)
+* @return: a - b
+*/
+
 
 /* FUNCTION multiply(a,b)
- * define a function called multiply with two number parameters a and b
- * @param: a, b (integers)
- * @return: a * b (* means multiply)
- */
+* define a function called multiply with two number parameters a and b
+* @param: a, b (integers)
+* @return: a * b (* means multiply)
+*/
+
 
 /* FUNCTION divide(a,b)
- * define a function called divide with two number parameters a and b
- * @param: a, b (integers)
- * @return: a / b (/ means divided by)
- */
+* define a function called divide with two number parameters a and b
+* @param: a, b (integers)
+* @return: a / b (/ means divided by)
+*/
 
 /* ************************************* */
 
 
 /* ICE CREAM CONE KATA */
 
+
 /* Var, Alert, Prompt, Conditional, While, Function. Global, Concatenation */
 
+
 /* Initialize Globals
- * Set a global variable myScoops = "Here's your cone with: "
- */
+* Set a global variable myScoops = "Here's your cone with: "
+*/
 
-/* FUNCTION main() 
- * initialize variable scoops, prompt user for "how many scoops (max 3)?"
- * if scoops is less than 4, call scoopLoop with argument scoops
- * otherwise display "oink oink" and call main again.
- * @param: none (main never gets params)
- * @return: none (main never gets returns
- */
 
-/* FUNCTION scoopLoop(scoops) 
- * start scoop at 1 and loop while scoop is less than or equal to scoops
- * inside the loop add nextScoop(scoop) to myScoops
- * after the loop's done, display "Here's your cone with " myScoops
- * @param: scoops (integer)
- * @return: none
- */
+/* FUNCTION main()
+* initialize variable scoops, prompt user for "how many scoops (max 3)?"
+* if scoops is less than 4, call scoopLoop with argument scoops
+* otherwise display "oink oink" and call main again.
+* @param: none (main never gets params)
+* @return: none (main never gets returns
+*/
+
+
+/* FUNCTION scoopLoop(scoops)
+* start scoop at 1 and loop while scoop is less than or equal to scoops
+* inside the loop add nextScoop(scoop) to myScoops
+* after the loop's done, display "Here's your cone with " myScoops
+* @param: scoops (integer)
+* @return: none
+*/
+
 
 /* FUNCTION nextScoop(scoop)
  * initialize a variable called flavor, prompt for "Flavor for scoop number [scoop]"
  * @param: scoop (integer)
  * @return: flavor (string)
  */
-
 
 /* ************************************* */
 
@@ -138,7 +145,7 @@
 /* Var Alert Prompt Conditional Switch 3 Functions */
 
 /* FUNCTION main() 
- * create a variable called color and prompt the user for a primary or secondary color
+ * create a variable called color and prompt the user for a primary or secondary color (they )
  * if checkColor(color) says false, say "must be primary or secondary" and call main again.
  * otherwise, display "the complementary color of [color] is [complementaryColor(color)]"
  * @param: none (main never gets params)
